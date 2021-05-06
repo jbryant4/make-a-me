@@ -1,0 +1,19 @@
+{
+  "name": "make-a-me",
+  "version": "1.0.0",
+  "description": "App that given user input through the command line will generate a README file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbryant4/make-a-me.git"
+  },
+  "author": "Joseph Bryant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbryant4/make-a-me/issues"
+  },
+  "homepage": "https://github.com/jbryant4/make-a-me#readme"
+}
