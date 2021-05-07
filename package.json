@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jbryant4/make-a-me/issues"
   },
-  "homepage": "https://github.com/jbryant4/make-a-me#readme"
+  "homepage": "https://github.com/jbryant4/make-a-me#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
 }
