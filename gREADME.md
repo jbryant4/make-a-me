@@ -1,9 +1,10 @@
 
-# hi
+# uSing
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description
 
-asldkjfsdf
+sdf
 
 ## Table of Contents
 
@@ -16,14 +17,15 @@ asldkjfsdf
 
 ## Installation
 
-alskdjfhsdf
+asdf
 
 ## Usage
 
-aaskdjfhgsdf
+asdf
 
 ## License
 
+This project is using the GNU license.
 
 ## Contributing
 
@@ -31,11 +33,11 @@ aaskdjfhgsdf
 
 ## Tests
 
-laksdjhfa
+asdf
 
 ## Questions
 
-[jbryant4 Github Repo] (https://github.com/jbryant4/hi)
+[ jbryant4 Github Repo](https://github.com/jbryant4/uSing)
 
-My email: joebryant614@gmail.com
+My email: joe
 

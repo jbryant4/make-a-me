@@ -29,7 +29,7 @@ const generate = {
     return `
 # ${data.projectName}
 
-${this.renderLicenseBadge(data.Licence)}
+${this.renderLicenseBadge(data.License)}
 ## Description
 
 ${data.projectDes}
@@ -65,7 +65,7 @@ ${data.projectTest}
 
 ## Questions
 
-[${data.userName} Github Repo] (https://github.com/${data.userName}/${data.projectName})
+[ ${data.userName} Github Repo](https://github.com/${data.userName}/${data.projectName})
 
 My email: ${data.email}
 
