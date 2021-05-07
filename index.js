@@ -52,17 +52,30 @@ const questions = [
     {
         type: 'input',
         name: 'projectInst',
-        message: 'Please enter installation instructions.',
+        message: 'What are the steps required to install your project?',
     },
     {
         type: 'input',
         name: 'projectUsage',
-        message: 'Please enter project Usage.',
+        message: 'Provide instructions and examples for use.',
+    },
+    {
+        type: 'confirm',
+        name: 'confirmCon',
+        message: 'Would you like to use an industry standard Contributor Covenant?',
+        default: true
     },
     {
         type: 'input',
-        name: 'projectCont',
-        message: 'Please give the project Contribution rules.',
+        name: 'projectCon',
+        message: 'Type your guidelines to Contributing to your Application:',
+        when: ({ confirmCon }) => {
+            if (! confirmCon) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     },
     {
         type: 'input',
@@ -71,15 +84,21 @@ const questions = [
     },
     {
         type: 'list',
-        name: 'Licence',
+        name: 'License',
         message: 'Would you like to add a Licence? (Check all that apply)',
-        choices: ['MIT', 'GNU', 'Apache', 'ISC','No Licence Used']
+        choices: ['MIT', 'GNU', 'Apache', 'ISC','No']
     },
 ];
 
 
 // TODO: Create a function to write README file
-function writeToFile(data) { }
+function writeToFile(data) { 
+    fs.writeFile('./gREADME.md',data, err => {
+            if (err) throw err;
+        
+            console.log('Generated ReadMe complete! Check out gREADME to see the output!')
+        });
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -94,9 +113,18 @@ function init() {
             questions
         )
         .then(answers => {
-            //! need to add if statement for licence 
-            generate.generateMarkdown(answers)
+            // use if statment to set up contributing section 
+            if (answers.confirmCon === true) {
+                answers.confirmCon = '[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)'
+            } else {
+                answers.confirmCon = answers.projectCon;
+            };
+            
+
+            const data = generate.generateMarkdown(answers)
             // Use user feedback for... whatever!!
+            
+            writeToFile(data);
         });
 
 }
