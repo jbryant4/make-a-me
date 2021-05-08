@@ -53,7 +53,7 @@ ${data.projectUsage}
 
 ## License
 
-This project is using the ${data.License} license.
+This project is using the ${data.License} license. Click the badge at the top of the page to go to that license documentation.
 
 ## Contributing
 
@@ -65,7 +65,9 @@ ${data.projectTest}
 
 ## Questions
 
-[ ${data.userName} Github Repo](https://github.com/${data.userName}/${data.projectName})
+If you have any questions feel free to either email me the question or create an issue on the Github Repo:
+
+[Project Github Repo](https://github.com/${data.userName}/${data.projectName})
 
 My email: ${data.email}
 
