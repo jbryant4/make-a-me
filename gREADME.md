@@ -1,10 +1,10 @@
 
-# uSing
+# asdf
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description
 
-sdf
+asdf
 
 ## Table of Contents
 
@@ -21,15 +21,15 @@ asdf
 
 ## Usage
 
-asdf
+ - HTML,CSS,JavaScript
 
 ## License
 
-This project is using the GNU license.
+This project is using the GNU license. Click the badge at the top of the page to go to that license documentation.
 
 ## Contributing
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
+asdf
 
 ## Tests
 
@@ -37,7 +37,9 @@ asdf
 
 ## Questions
 
-[ jbryant4 Github Repo](https://github.com/jbryant4/uSing)
+If you have any questions feel free to either email me the question or create an issue on the Github Repo:
 
-My email: joe
+[Project Github Repo](https://github.com/asdf/asdf)
+
+My email: asdf
 

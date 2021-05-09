@@ -25,7 +25,7 @@ const generate = {
 
   // TODO: Create a function to generate markdown for README
   generateMarkdown: function (data) {
-    
+    console.log(data.projectUsage);
     return `
 # ${data.projectName}
 

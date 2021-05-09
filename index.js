@@ -55,9 +55,10 @@ const questions = [
         message: 'What are the steps required to install your project?',
     },
     {
-        type: 'input',
+        type: 'checkbox',
         name: 'projectUsage',
-        message: 'Provide instructions and examples for use.',
+        message: 'What was used in this project pick all that apply:',
+        choices: ['HTML','CSS','JavaScript','jQuery','Node.js']
     },
     {
         type: 'confirm',
@@ -80,7 +81,7 @@ const questions = [
     {
         type: 'input',
         name: 'projectTest',
-        message: 'Please give the project Test',
+        message: 'Please give the instruction on how to test your Application:',
     },
     {
         type: 'list',
